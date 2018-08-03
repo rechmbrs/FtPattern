@@ -72,7 +72,7 @@ The Plug-ins will be available under Filter > RONC 2018 if you want to run them 
 
 ## How to use
 
-Please see the included [documentation](doc/index.html) for a tutorial on how to use the plugins and actions.
+Please see the included [documentation](http://htmlpreview.github.com/?https://github.com/rechmbrs/FtPattern/blob/master/doc/index.html) for a tutorial on how to use the plugins and actions.
 
 
 ## License
