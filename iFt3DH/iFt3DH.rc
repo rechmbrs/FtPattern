@@ -1,0 +1,192 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "iFt3DH_resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+/*PROBA DIALOG DISCARDABLE  0, 0, 130, 45
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "iFt3DH"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,57,27,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,3,27,50,14
+    LTEXT           "Make Ft3D ?",IDC_STATIC,7,5,116,14
+END*/
+
+IDD_DIALOG1 DIALOGEX 0, 0, 130, 68
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Ft3DH_iFt3DH Transform"
+FONT 14, "MS Sans Serif", 700, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,0,54,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,80,54,50,14
+    DEFPUSHBUTTON   "Luminance",IDC_Luminance,0,35,42,14
+    DEFPUSHBUTTON   "Red",IDC_Red,46,35,27,14
+    DEFPUSHBUTTON   "Green",IDC_Green,75,35,28,14
+    DEFPUSHBUTTON   "Blue",IDC_Blue,105,35,25,14
+    CTEXT           "FOURIER Transform Type:",IDC_STATIC1,20,4,95,8
+    CTEXT           "Image input method:",IDC_STATIC2,29,26,75,8
+    CONTROL         "Forward",IDC_Forward,"Button",BS_AUTORADIOBUTTON | BS_LEFT,26,12,41,10
+    CONTROL         "Inverse",IDC_Inverse,"Button",BS_AUTORADIOBUTTON | BS_LEFT,72,12,38,10
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+#define VER_FILEVERSION             1,0,3,0
+#define VER_FILEVERSION_STR         "1.0.3\0"
+
+#define VER_PRODUCTVERSION          1,0,3,0
+#define VER_PRODUCTVERSION_STR      "1.0\0"
+
+#define VER_COMPANYNAME_STR         "RONC"
+#define VER_FILEDESCRIPTION_STR     "iFt3DH"
+#define VER_INTERNALNAME_STR        "iFt3DHv1.03"
+#define VER_LEGALCOPYRIGHT_STR      "Copyright (C) 2018"
+#define VER_ORIGINALFILENAME_STR    "iFt3DH.8bf"
+#define VER_PRODUCTNAME_STR         "Fourier Transform 1D forward"
+
+#ifndef DEBUG
+#define VER_DEBUG                   0
+#else
+#define VER_DEBUG                   VS_FF_DEBUG
+#endif
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION    	VER_FILEVERSION
+PRODUCTVERSION 	VER_PRODUCTVERSION
+FILEFLAGSMASK  	VS_FFI_FILEFLAGSMASK
+// FILEFLAGS(VER_PRIVATEBUILD | VER_PRERELEASE | VER_DEBUG)
+FILEOS         	VOS__WINDOWS32
+FILETYPE       	VFT_DLL
+FILESUBTYPE    	VFT2_UNKNOWN
+BEGIN
+BLOCK "StringFileInfo"
+BEGIN
+BLOCK "040904E4"
+
+BEGIN
+VALUE "CompanyName", VER_COMPANYNAME_STR
+VALUE "FileDescription", VER_FILEDESCRIPTION_STR
+VALUE "FileVersion", VER_FILEVERSION_STR
+VALUE "InternalName", VER_INTERNALNAME_STR
+VALUE "LegalCopyright", VER_LEGALCOPYRIGHT_STR
+VALUE "OriginalFilename", VER_ORIGINALFILENAME_STR
+VALUE "ProductName", VER_PRODUCTNAME_STR
+VALUE "ProductVersion", VER_PRODUCTVERSION_STR
+END
+END
+
+BLOCK "VarFileInfo"
+BEGIN
+/* The following line should only be modified for localized versions.     */
+/* It consists of any number of WORD,WORD pairs, with each pair           */
+/* describing a language,codepage combination supported by the file.      */
+/*                                                                        */
+/* For example, a file might have values "0x409,1252" indicating that it  */
+/* supports English language (0x409) in the Windows ANSI codepage (1252). */
+
+VALUE "Translation", 0x409, 1252
+
+END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG   /* iFt3DH_DIALOG1", DIALOG */
+    BEGIN
+        BOTTOMMARGIN, 45
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "iFt3DH_resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "#include ""iFt3DH.pipl""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+0 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "iFt3DH.pipl"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{09537535-69F1-4A54-AD3D-96BA60DE0B69}") = "Ft2DH", "Ft2DH.vcxproj", "{8A2B32D8-ABE0-43A8-854E-6727C5566325}"
+
+// {09537535-69F1-4A54-AD3D-96BA60DE0B69}
+static const GUID <<name>> = 
+{ 0x9537535, 0x69f1, 0x4a54, { 0xad, 0x3d, 0x96, 0xba, 0x60, 0xde, 0xb, 0x69 } };
+// {8A2B32D8-ABE0-43A8-854E-6727C5566325}
+static const GUID <<name>> = 
+{ 0x8a2b32d8, 0xabe0, 0x43a8, { 0x85, 0x4e, 0x67, 0x27, 0xc5, 0x56, 0x63, 0x25 } };
+
+
+
+
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A2B32D8-ABE0-43A8-854E-6727C5566325}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8A2B32D8-ABE0-43A8-854E-6727C5566325}.Debug|Win32.Build.0 = Debug|Win32
+		{8A2B32D8-ABE0-43A8-854E-6727C5566325}.Debug|x64.ActiveCfg = Debug|x64
+		{8A2B32D8-ABE0-43A8-854E-6727C5566325}.Debug|x64.Build.0 = Debug|x64
+		{8A2B32D8-ABE0-43A8-854E-6727C5566325}.Release|Win32.ActiveCfg = Release|Win32
+		{8A2B32D8-ABE0-43A8-854E-6727C5566325}.Release|Win32.Build.0 = Release|Win32
+		{8A2B32D8-ABE0-43A8-854E-6727C5566325}.Release|x64.ActiveCfg = Release|x64
+		{8A2B32D8-ABE0-43A8-854E-6727C5566325}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {491B68BD-1663-40D9-8BC6-671C024AC5C0}
+	EndGlobalSection
+EndGlobal

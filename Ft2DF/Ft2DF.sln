@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{EB97031F-32AA-48D4-844B-D116B4BA22F6}") = "Ft2DF", "Ft2DF.vcxproj", "{2E5257D8-2C1C-4682-99E0-71E327375CF1}"
+EndProject
+
+
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E5257D8-2C1C-4682-99E0-71E327375CF1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2E5257D8-2C1C-4682-99E0-71E327375CF1}.Debug|Win32.Build.0 = Debug|Win32
+		{2E5257D8-2C1C-4682-99E0-71E327375CF1}.Debug|x64.ActiveCfg = Debug|x64
+		{2E5257D8-2C1C-4682-99E0-71E327375CF1}.Debug|x64.Build.0 = Debug|x64
+		{2E5257D8-2C1C-4682-99E0-71E327375CF1}.Release|Win32.ActiveCfg = Release|Win32
+		{2E5257D8-2C1C-4682-99E0-71E327375CF1}.Release|Win32.Build.0 = Release|Win32
+		{2E5257D8-2C1C-4682-99E0-71E327375CF1}.Release|x64.ActiveCfg = Release|x64
+		{2E5257D8-2C1C-4682-99E0-71E327375CF1}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {491B68BD-1663-40D9-8BC6-671C024AC5C0}
+	EndGlobalSection
+EndGlobal

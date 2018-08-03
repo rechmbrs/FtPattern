@@ -1,0 +1,89 @@
+
+
+
+
+
+resource 'PiPL' (16000, "iFt2DF" " PiPL", purgeable)
+	{
+		{
+		Kind { Filter },
+		Name { "iFt2DF" "..." },
+		Category { "RONC 2018" },
+		Version { (4 << 16) | 1 },
+
+		
+
+
+
+
+
+
+
+		    
+				CodeWin64X86 { "ENTRYPOINT" },
+			
+
+
+		
+		SupportedModes
+		{
+			noBitmap, noGrayScale,
+			noIndexedColor, doesRGBColor,
+			noCMYKColor, noHSLColor,
+			noHSBColor, noMultichannel,
+			noDuotone, noLABColor
+		},
+			
+		EnableInfo { "in (PSHOP_ImageMode, RGBMode, RGB48Mode, RGB96Mode)" },
+    		FilterCaseInfo
+		{
+			{
+				
+				inWhiteMat, outWhiteMat,
+				doNotWriteOutsideSelection,
+				filtersLayerMasks, worksWithBlankData,
+				doNotCopySourceToDestination,
+					
+				
+				inWhiteMat, outWhiteMat,
+				writeOutsideSelection,
+				filtersLayerMasks, worksWithBlankData,
+				doNotCopySourceToDestination,
+				
+				
+				inWhiteMat, outWhiteMat,
+				writeOutsideSelection,
+				filtersLayerMasks, worksWithBlankData,
+				doNotCopySourceToDestination,
+					
+				
+				inWhiteMat, outWhiteMat,
+				doNotWriteOutsideSelection,
+				filtersLayerMasks, worksWithBlankData,
+				doNotCopySourceToDestination,
+					
+				
+				inWhiteMat, outWhiteMat,
+				writeOutsideSelection,
+				filtersLayerMasks, worksWithBlankData,
+				doNotCopySourceToDestination,
+					
+				
+				inWhiteMat, outWhiteMat,
+				doNotWriteOutsideSelection,
+				filtersLayerMasks, worksWithBlankData,
+				doNotCopySourceToDestination,
+					
+				
+				inWhiteMat, outWhiteMat,
+				writeOutsideSelection,
+				filtersLayerMasks, worksWithBlankData,
+				doNotCopySourceToDestination
+			}
+		}	         ,
+		
+		PlugInMaxSize { 2000000, 2000000 }
+		
+		}
+	};
+
