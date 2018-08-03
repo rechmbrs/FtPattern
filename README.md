@@ -75,6 +75,23 @@ The Plug-ins will be available under Filter > RONC 2018 if you want to run them 
 Please see the included [documentation](http://htmlpreview.github.com/?https://github.com/rechmbrs/FtPattern/blob/master/doc/index.html) for a tutorial on how to use the plugins and actions.
 
 
+## How to build
+
+The plugins are known to compile on macOS (using Xcode 9.x) and Windows (using Visual Studio Community Edition 2017). Either way, you will need 
+
+ 1. The [Adobe Photoshop® SDK](https://www.adobe.com/devnet/photoshop/sdk/eula.html) for your OS.
+ 2. [FFTW](http://www.fftw.org) 3.3.x. For convenience macOS and Windows FFTW pre-built libraries are included in this repository (see the Ft_lib directory).
+
+### Windows
+ 
+Extract the Adobe Photoshop® SDK to the root of your C drive. Clone this repository wherever you like and then open each one of the Visual Studio project files and build each plugin.
+ 
+ 
+### macOS
+
+For macOS, extract the Adobe Photoshop® SDK wherever you like, navigate to ```pluginsdk/samplecode/filter``` and clone this repository there. Open each XCode project file and build the plugins one by one.
+
+
 ## License
 
 Please see the [LICENSE](LICENSE) text file included in this repository for copyright and license information.
