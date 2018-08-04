@@ -23,7 +23,7 @@ This is a set of plugins and actions for Adobe Photoshop that will let you easil
 * iFt2DH.plugin – Mac plugin for doing the inverse of Ft2DH.
 * iFt3DH.plugin – Mac plugin for doing the inverse of Ft3DH.
 * Pattern Suppressor v2.atn – Photoshop Actions for doing pattern suppression.
-* Readme.pdf – This file. Duh.
+* README.md – This file.
 
 
 ## Requirements and compatibility
@@ -72,7 +72,7 @@ The Plug-ins will be available under Filter > RONC 2018 if you want to run them 
 
 ## How to use
 
-Please see the included [documentation](http://htmlpreview.github.com/?https://github.com/rechmbrs/FtPattern/blob/master/doc/index.html) for a tutorial on how to use the plugins and actions.
+Please see the included [documentation](http://htmlpreview.github.com/?https://github.com/rechmbrs/FtPattern/blob/master/Ft/doc/index.html) for a tutorial on how to use the plugins and actions.
 
 
 ## How to build
