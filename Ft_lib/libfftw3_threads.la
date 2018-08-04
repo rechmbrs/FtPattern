@@ -5,10 +5,10 @@
 # It is necessary for linking the library.
 
 # The name that we can dlopen(3).
-dlname='libfftw3_threads.3.dylib'
+dlname=''
 
 # Names of this library.
-library_names='libfftw3_threads.3.dylib libfftw3_threads.dylib'
+library_names=''
 
 # The name of the static archive.
 old_library='libfftw3_threads.a'
