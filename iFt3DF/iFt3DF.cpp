@@ -128,7 +128,6 @@ DLLExport MACPASCAL void PluginMain(const int16        selector,  // TYPE of act
     double xSize_X_ySize_X_zSize = (double)(xSize * ySize * zSize);
     
     int bitDepth = fPB->depth;    //Bit Depth/Channel
-    int byteDepth = bitDepth / 8; //Byte Depth/Channel
     int nPlanes = fPB->planes;    //Number planes
     int nChans = nPlanes - 1;     //Number channels
     
@@ -173,8 +172,6 @@ DLLExport MACPASCAL void PluginMain(const int16        selector,  // TYPE of act
         // Data initialization
         //********************************************************************************************************
         double dSum;
-        double dnPlanes = nPlanes;
-        double dnChans = nChans;
         
         unsigned char* cIn = (unsigned char*)fPB->inData;
         unsigned short* sIn = (unsigned short*)fPB->inData;

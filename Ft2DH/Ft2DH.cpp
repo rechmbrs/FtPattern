@@ -133,7 +133,6 @@ extern "C" __declspec(dllexport) void ENTRYPOINT(
         int xSize   = fPB->imageSize.h - 2; //                          519    520    521    522         true + 2
         int xSizeH = (xSize / 2) + 1;            //                          259   260    260    261        (width / 2) + 1
         int xSizeHx2 = xSizeH * 2;              //                          518    520    520    522       ((width / 2) + 1) * 2
-        int xSizeHm1 = xSizeH - 1;              //                          258    259    259    260
         
         int ySize = fPB->imageSize.v; //Col Size
         int zSize = 3;
