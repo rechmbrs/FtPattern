@@ -2,11 +2,17 @@
 #define LC(a,b,c,d)       #d, #c, #b, #a
 #define RSCS32(a)         a, 0
 
+STRINGTABLE	DISCARDABLE
+BEGIN
+	16000,
+	"Ft1DH.\n\nVersion CC 2017 Release 1 (10/11/2016)\nCopyright 2018-2016, Adobe Systems Incorporated.\nAll Rights Reserved.\n\nAn FFT plug-in for Adobe Photoshop®."
+END
+
 16000  PiPL  DISCARDABLE
 BEGIN
 	1, /* First byte must always be 1 */
 	0L, /* kCurrentPiPL Version */
-	    9L, /* Property count */
+	   11L, /* Property count */
 	"MIB8", /* '8BIM' */
 	"dnik", /* 'kind' PIKindProperty */
 	0L, /* Index */
@@ -29,13 +35,31 @@ BEGIN
 	"srev", /* 'vers' PIVersionProperty */
 	0L, /* Index */
 	    4L, /* Length */
-	0X00040001L, /* (Major << 16) | Minor */
+	0X00040000L, /* (Major << 16) | Minor */
+
+	"MIB8", /* '8BIM' */
+	"tpmc", /* 'cmpt' PIComponent */
+	0L, /* Index */
+	   12L, /* Length */
+	1179648L, /* Version */
+	"Ft1DH.\0\0", /* Unique ID */
 
 	"MIB8", /* '8BIM' */
 	"4668", /* '8664' PIWin64X86CodeProperty */
 	0L, /* Index */
 	   12L, /* Length */
-	"ENTRYPOINT\0\0", 
+	"PluginMain\0\0", 
+
+	"MIB8", /* '8BIM' */
+	"mtsh", /* 'hstm' PITerminology */
+	0L, /* Index */
+	   56L, /* Length */
+	0L, /* Version */
+	"1Kds", /* Class ID */
+	"1Kds", /* Event ID */
+	16000, /* Terminology ID */
+	"98b5a608-46ce-11d3-bd6b-0060b0a13dc4\0\0\0\0", /* Unique string */
+	    0, /* Padding */
 
 	"MIB8", /* '8BIM' */
 	"edom", /* 'mode' SupportedModes */
@@ -51,6 +75,12 @@ BEGIN
 	"in (PSHOP_ImageMode, RGBMode, RGB48Mode, RGB96Mode)\0\0\0\0\0", 
 
 	"MIB8", /* '8BIM' */
+	"csnw", /* 'wnsc' WantsScrap */
+	0L, /* Index */
+	    4L, /* Length */
+	1L, 
+
+	"MIB8", /* '8BIM' */
 	"icif", /* 'fici' PIFilterCaseInfoProperty */
 	0L, /* Index */
 	   28L, /* Length */
@@ -62,12 +92,54 @@ BEGIN
 	0X00070404L, 
 	0X000F0404L, 
 
-	"MIB8", /* '8BIM' */
-	"23sm", /* 'ms32' PlugInMaxSize */
-	0L, /* Index */
-	    8L, /* Length */
-	2000000L, 
-	2000000L, 
+END
 
+16000  aete  DISCARDABLE
+BEGIN
+	1, /* First byte must always be 1 */
+	0X0001, /* majorVersion|minorVersion */
+	0, /* language */
+	0, /* script */
+	    1, /* Suite Count */
+	"\011RONC 2018", 
+	"\026Adobe example plug-ins", 
+	"1Kds", /* Suite ID */
+	1, /* Suite level */
+	1, /* Suite version */
+	    1, /* Event Count */
+	"\006Ft1DH.", 
+	"\015Ft1DH plug-in", 
+	"1Kds", /* Event class */
+	"1Kds", /* Descriptor type */
+	"llun", /* Reply type */
+	"\000", 
+	000000, /* Flags */
+	"RmI#", /* Direct param type */
+	"\000", 
+	0XB000, /* Direct params */
+	    4, /* Parameter Count */
+	"\012Horizontal", 
+	"nzrH", 
+	"gnol", 
+	"\023horizontal position", 
+	000000, /* Param flags */
+	"\010Vertical", 
+	"ctrV", 
+	"gnol", 
+	"\021vertical position", 
+	000000, /* Param flags */
+	"\004Size", 
+	"caFX", 
+	"gnol", 
+	"\011font size", 
+	000000, /* Param flags */
+	"\015Gaussian Blur", 
+	"DBaG", 
+	"loob", 
+	"\015Gaussian Blur", 
+	000000, /* Param flags */
+	    0, /* Class count */
+	0, /* Number of comparison ops (always 0) */
+	    0, /* Enum count */
 END
 
