@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7ABCC89A-C30F-4C50-95F4-3D1D53AAE238}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Ft1DH RONC</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.8bf</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.8bf</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.8bf</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.8bf</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;Ft1DH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\samplecode\common\includes;C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\PhotoshopAPI\Photoshop;C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\PhotoshopAPI\PICA_SP;C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\PhotoshopAPI\ADM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libfftw3-3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;Ft1DH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\samplecode\common\includes;C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\PhotoshopAPI\Photoshop;C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\PhotoshopAPI\PICA_SP;C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\PhotoshopAPI\ADM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libfftwx64_3-3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;Ft1DH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\samplecode\common\includes;C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\PhotoshopAPI\Photoshop;C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\PhotoshopAPI\PICA_SP;C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\PhotoshopAPI\ADM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libfftw3-3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;Ft1DH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\samplecode\common\includes;C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\PhotoshopAPI\Photoshop;C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\PhotoshopAPI\PICA_SP;C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\PhotoshopAPI\ADM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\Ft_lib\libfftwx64_3-3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="Ft1DH.r">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl /I"C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\samplecode\common\includes" /I"C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\photoshopapi\photoshop" /I"C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\photoshopapi\pica_sp" /I"C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\samplecode\common\resources" /EP /DWIN32=1 /Tc"%(FullPath)" &gt; "$(IntDir)%(Filename).rr"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).rr</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl /I"C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\samplecode\common\includes" /I"C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\photoshopapi\photoshop" /I"C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\photoshopapi\pica_sp" /I"C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\samplecode\common\resources" /EP /DWIN32=1 /Tc"%(FullPath)" &gt; "$(IntDir)%(Filename).rr"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).rr</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl /I"C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\samplecode\common\includes" /I"C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\photoshopapi\photoshop" /I"C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\photoshopapi\pica_sp" /I"C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\samplecode\common\resources" /EP /DWIN32=1 /Tc"%(FullPath)" &gt; "$(IntDir)%(Filename).rr"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).rr</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl /I"C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\samplecode\common\includes" /I"C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\photoshopapi\photoshop" /I"C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\photoshopapi\pica_sp" /I"C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\samplecode\common\resources" /EP /DWIN32=1 /Tc"%(FullPath)" &gt; "$(IntDir)%(Filename).rr"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).rr</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="Ft1DH.rr">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\samplecode\resources\cnvtpipl "$(IntDir)%(Filename).rr" "$(IntDir)\%(Filename).pipl"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">generating pipl</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)\%(Filename).pipl</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\samplecode\resources\cnvtpipl "$(IntDir)%(Filename).rr" "$(IntDir)\%(Filename).pipl"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">generating pipl</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)\%(Filename).pipl</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\samplecode\resources\cnvtpipl "$(IntDir)%(Filename).rr" "$(IntDir)\%(Filename).pipl"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">generating pipl</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)\%(Filename).pipl</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\adobe_photoshop_sdk_cc_2017_win\pluginsdk\samplecode\resources\cnvtpipl "$(IntDir)%(Filename).rr" "$(IntDir)\%(Filename).pipl"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">generating pipl</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)\%(Filename).pipl</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Ft_lib\fftw3.h" />
+    <ClInclude Include="..\Ft_lib\Ft_lib.h" />
+    <ClInclude Include="Ft1DH_resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Ft1DH.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Ft1DH.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ft1DH.pipl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
