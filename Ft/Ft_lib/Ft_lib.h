@@ -66,7 +66,7 @@ int aLert(char string1[], char string2[])
 	int iERR = 0;
 
 #ifdef _WIN32
-    char zString[u_zLen];
+/*    char zString[u_zLen];
     short ErrorCode = 0;
     
     sprintf_s(static_cast<void>(zString), static_cast<void>(string1), ErrorCode);
@@ -76,8 +76,8 @@ int aLert(char string1[], char string2[])
     
 	MultiByteToWideChar(CP_ACP, 0, zString, -1, wString, u_zLen);
 	MultiByteToWideChar(CP_ACP, 0, string2, -1, vString, u_zLen);
-	iERR = MessageBox(NULL, wString, vString, MB_OKCANCEL | MB_APPLMODAL | MB_SYSTEMMODAL);
-#elifdef __APPLE__
+	iERR = MessageBox(NULL, wString, vString, MB_OKCANCEL | MB_APPLMODAL | MB_SYSTEMMODAL);*/
+#elif __APPLE__
     // iERR = MessageBox(NULL, zString, string2, MB_OKCANCEL | MB_APPLMODAL | MB_SYSTEMMODAL);
 #endif
 	return iERR;
