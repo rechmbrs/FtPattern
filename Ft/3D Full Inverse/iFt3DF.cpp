@@ -14,11 +14,11 @@
 //********************************************************************************************************
 
 /*
- Ron Chambers, rechmbrs@gmail.com  Ft3DF_iFt3DF
+ Ron Chambers, rechmbrs@gmail.com and Francesco Pierfederici, fpierfed@gmail.com  Ft3DF_iFt3DF
  
- Photoshop CC 2018 / VisualStudio 2017 Community
+ Photoshop CC 2018 / VisualStudio 2017 Community / XCode 9.4.1
  
- February 2018
+ November 2017 to August 2018
  */
 //********************************************************************************************************
 //********************************************************************************************************

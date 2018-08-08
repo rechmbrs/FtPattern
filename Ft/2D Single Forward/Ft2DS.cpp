@@ -15,7 +15,7 @@
 
 
 /*
- Ron Chambers, rechmbrs@gmail.com  Ft2DS_iFt2DS
+ Ron Chambers, rechmbrs@gmail.com and Francesco Pierfederici, fpierfed@gmail.com  Ft2DS_iFt2DS
  Fixed 8 and 16 bit/channel images, added 32 bit/channel images, and simplified overall coding.
  
  Corrected inverse for missing the correction back to upper left corner to compensate for move to center in forward.
@@ -24,9 +24,9 @@
  
  Special note:  Adobe image formats expect only 0 and positive numbers with the maximum defined by the bit depth  8, 16, or 32.
  
- Photoshop CC 2018 / VisualStudio 2017 Community
+ Photoshop CC 2018 / VisualStudio 2017 Community / XCode 9.4.1
  
- November/December 2017  January/February 2018
+ November 2017 to August 2018
  
  */
 //****************************************************
