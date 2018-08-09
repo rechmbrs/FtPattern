@@ -1,0 +1,294 @@
+<!--- IMAGE_COMPARATOR-HELPv2.html  -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
+  <meta name="description" content="Documentation" />
+  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <meta name="author" content="Ron Chambers" />
+
+  <title>IMAGE COMPARATOR-HELPv2</title>
+  <style type="text/css">
+/*<![CDATA[*/
+  body {
+        background-color: #707070;
+        color: #000000;
+        font-family: Verdana;
+        font-size: 70%;
+        font-weight: bold;
+      }
+
+       :link {
+        color: #000000;
+      }
+
+       :visited {
+        color: #00ff00;
+      }
+
+       :active {
+        color: #FF0000;
+      }
+
+      .c1 {
+        text-align: center;
+      }
+
+      td {
+        font-size: 60%;
+        font-weight: bold;
+      }
+
+      .bg {
+        background-color: #a0a0a0;
+        font-size: 80%;
+        font-weight: bold;
+      }
+
+      .bg1 {
+        background-color: #f0f0f0;
+        font-size: 60%;
+      }
+      .bg2 {
+        background-color: #f0f0f0;
+        font-size: 90%;
+        font-weight: bold;
+      }
+
+      img.c3 {
+        width: 751px;
+        height: 414px;
+      }
+
+      img.c2 {
+        width: 751px;
+        height: 414px;
+      }
+
+      div.c1 {
+        font-size: 140%;
+      }
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <table align="center" cols="2" border="1" cellspacing="0" cellpadding="2" width=
+    "800">
+      <tbody>
+        <tr align="center" valign="middle">
+          <th class="bg" colspan="2">
+            <div class="c1">
+              IMAGE COMPARATOR<br />
+              &nbsp;&nbsp;for Photoshop&nbsp;&nbsp;by RONC &#169;2018
+            </div>
+
+            <div>
+              Version 2 08Jul2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "mailto:rechmbrs@gmail.com?Subject=IC2" target="_top">(E-MAIL)</a>
+            </div>
+          </th>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg" colspan="2">PHOTOSHOP SCRIPTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by
+          RONC</td>
+        </tr>
+
+        <tr align="left" valign="middle">
+          <td class="bg1" colspan="2">
+            <div style="padding-left: 20px; padding-right: 20px;">
+              IMAGE COMPARATOR - The user selects two layers (images) which are desired
+              to be compared. These images will then usually be written as PNG (24
+              bits/pixel) files or JPG files. A webpage is then provided to aid in
+              visually comparing the images within an Internet browser by scrolling one
+              image over the other. Typically all layers will be available but the script
+              will ignore those layers that the user turned off their visiblity in
+              Photoshop before the script execution. Input can be 8, 16, and 32 bit with
+              the output limited to 8 bit per color because of the Internet browser
+              limits. The PNG files are the best at preserving the images for Internet
+              use as there is no compression applied. Often larger files input are needed
+              so JPG files can be used but don't use for Pixel-Peeping.
+            </div>
+          </td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg" colspan="2">INPUT IMAGES</td>
+        </tr>
+
+        <tr align="left" valign="middle">
+          <td class="bg1" colspan="2">
+            <div style="padding-left: 15px; padding-right: 15px;">
+              The input must be a multi-layered file containing the images for comparing
+              as layers.<br />
+              Images for comparison must share the same dimensions and be ALIGNED. The
+              image dimensions are best if like most print size and limited to the size
+              of the device being used to view them. Smaller sizes (say 900x600) are best
+              if one expects to scroll quickly and fits most laptop screens with much
+              larger sizes (say 1500x1000) scroll slower. Files as large as 7500x5000 are
+              viewable because scrollbars are available in the browser.<br />
+              Previous processing of the images should be parallel as possible and saved
+              to files using non-compression formats like - psd/psb, tif or png24.
+            </div>
+          </td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg" colspan="2">USAGE PARAMETERS</td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg1" colspan="2"><img src="IC_dialog2.png" alt="Dialog" class=
+          "c2" /></td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg" colspan="2">OUTPUT FOLDERNAME/FILENAME</td>
+        </tr>
+
+        <tr align="left" valign="middle">
+          <td class="bg1" colspan="2">
+            <div style="padding-left: 15px; padding-right: 15px;">
+              FOLDERNAME - Location where to place images and web page. Desktop is
+              DEFAULT.<br />
+              FILENAME - Base filename for images and web page. ImageComparator is the
+              DEFAULT. ImageComparatorLeft.png, ImageComparatorRight.png, and
+              ImageComparatorLeft.html. FILE Type - The file type can be either PNG
+              (three compaction levels lossless) or JPG (12 levels of compression but
+              lossy). Settings are: png - 0, 6, and 9 or jpg - 1, 2, 3, 4, 5, 6, 7, 8, 9,
+              10, 11, and 12.
+            </div>
+          </td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg" colspan="2">IMAGE SCROLL (HORIZONTAL/VERTICAL)</td>
+        </tr>
+
+        <tr align="left" valign="middle">
+          <td class="bg1" colspan="2">
+            <div style="padding-left: 15px; padding-right: 15px;">
+              HORIZONTAL - Left-right scrolling.<br />
+              VERTICAL - Top-bottom scrolling.
+            </div>
+          </td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg" colspan="2">INPUT IMAGES and USER COMMENTS</td>
+        </tr>
+
+        <tr align="left" valign="middle">
+          <td class="bg1" colspan="2">
+            <div style="padding-left: 15px; padding-right: 15px;">
+              LAYERNAME LEFT - Select a layer from the dropdown list for left
+              image.<br />
+              LAYERNAME RIGHT - Select a layer from the dropdown list for right
+              image.<br />
+              COMMENTS LEFT - Comments to describe the left image's difference from the
+              right one.<br />
+              COMMENTS RIGHT - Comments to describe the right image's difference from the
+              left one.<br />
+              COMMENTS COMMON - Comments to describe those those the images share in
+              common.<br />
+              &nbsp;&nbsp;&nbsp;To change lines within the comments fields, use only the
+              CTRL+J key combination.<br />
+              &nbsp;&nbsp;&nbsp;Do not use Enter or CTRL+Enter key combination.<br />
+              &nbsp;&nbsp;&nbsp;The output should be displayed at 100% or larger on LCD
+              screens.
+            </div>
+          </td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg" colspan="2">OK/CANCEL/HELP</td>
+        </tr>
+
+        <tr align="left" valign="middle">
+          <td class="bg1" colspan="2">
+            <div style="padding-left: 15px; padding-right: 15px;">
+              OK - Start script execution using parameters set in the above fields.<br />
+              CANCEL - Cancel the use of the script before running and return to
+              Photoshop.<br />
+              &nbsp;&nbsp;&nbsp;The ESC key cancels execution of the script while running
+              in Photoshop.<br />
+              HELP - Open the PDF help file.<br />
+            </div>
+          </td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg" colspan="2">RECOMMENDED SCRIPT USAGE</td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg1" colspan="2">The output should be displayed at 100% or larger on
+          LCD screens.</td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg" colspan="2">EXECUTION OUTPUT</td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg1" colspan="2"><img src="IC-Exec1.png" alt="Dialog" class=
+          "c3" /></td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg" colspan="2">INSTALLATION/REMOVAL</td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg1" colspan="2">This script should work on Photoshop versions CS6
+          and CC onwards and for both Windows and MAC.<br />
+          Might also work with Photoshop Elements. Someone should try it. Please.<br />
+          <br />
+          The Script filename is IMAGE COMPARATOR.jsxbin and will be loaded to a folder
+          with mostly *.jsx files.<br />
+          The Help filename is IMAGE_COMPARATOR-HELPv2.pdf and should be placed in the same
+          folder as the Script file.</td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg1" width="50%">MAC OS X foldername:<br />
+          PSCC 2018:<br />
+          Users/[username]/Library/Preferences/Adobe Photoshop CC 2018 Settings<br />
+          PSCS6:<br />
+          Users/[username]/Library/Preferences/Adobe Photoshop CS6 Settings</td>
+
+          <td class="bg1" width="50%">WINDOWS 10 foldername:<br />
+          PSCC 2018:<br />
+          C:\Program Files\Adobe\Adobe Photoshop CC 2018\Presets\Script</td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg" colspan="2">COPYRIGHT</td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg1" colspan="2">
+            <div style="padding: 25px;">
+			  RON CHAMBERS COPYRIGHT 2018
+			  <br />
+			  IMAGE COMPARATOR LICENSE AND COPYRIGHT
+			  <br />
+			  Ron Chambers, rechmbrs@gmail.com<br />
+			  February 2018<br />
+			  Release of IMAGE_COMPARATOR.jsxbin.  The jsxbin routines are JavaScripts scripts for Adobe Photoshop.  Compilation and rules for coding were set by Adobe ExtendedScript IDE.<br />
+			  <br />
+			  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.<br />
+			  <br />
+			  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.<br />
+			</div>
+		  </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

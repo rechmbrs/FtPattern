@@ -1,0 +1,534 @@
+<!---  PROCESS_PARAMETER_SCANNER-HELP.html  -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
+  <meta name="description" content="Documentation" />
+  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <meta name="author" content="Ron Chambers" />
+
+  <title>PROCESS_PARAMETER_SCANNER-HELP</title>
+  <style type="text/css">
+/*<![CDATA[*/
+      body {
+        background-color: #707070;
+        color: #000000;
+        font-family: Verdana;
+        font-size: 70%;
+        font-weight: bold;
+      }
+
+       :link {
+        color: #000000;
+      }
+
+       :visited {
+        color: #00ff00;
+      }
+
+       :active {
+        color: #FF0000;
+      }
+
+      .c1 {
+        text-align: center;
+      }
+
+      td {
+        font-size: 60%;
+        font-weight: bold;
+      }
+
+      .bg {
+        background-color: #a0a0a0;
+        font-size: 80%;
+        font-weight: bold;
+      }
+
+      .bg1 {
+        background-color: #f0f0f0;
+        font-size: 60%;
+      }
+      .bg2 {
+        background-color: #f0f0f0;
+        font-size: 90%;
+        font-weight: bold;
+      }
+
+      img.c3 {
+        width: 161px;
+        height: 249px;
+      }
+
+      img.c2 {
+        width: 589px;
+        height: 318px;
+      }
+
+      div.c1 {
+        font-size: 140%;
+      }
+
+      ul {
+        margin: .25em;
+        padding: 0 15px 0 15px;
+        list-style-type: disc;
+      }
+
+      li {
+        margin: .25em;
+        padding: 0em;
+      }
+    /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="c1">
+    <table align="center" cols="2" border="1" cellspacing="0" cellpadding="2" width=
+    "800">
+      <tbody>
+        <tr align="center" valign="middle">
+          <th class="bg" colspan="2">
+            <div class="c1">
+              PROCESS PARAMETER SCANNER
+            </div><br />
+            &nbsp;&nbsp;for Photoshop&nbsp;&nbsp;by RONC &#169;&nbsp;2018
+
+            <div>
+              Version 1 24Jun2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "mailto:rechmbrs@gmail.com?Subject=PPS1.00" target="_top">(E-MAIL)</a>
+            </div>
+          </th>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg" colspan="2">PHOTOSHOP SCRIPTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by
+          RONC</td>
+        </tr>
+
+        <tr align="left" valign="middle">
+          <td class="bg1" colspan="2">
+            <div style="padding-left: 20px; padding-right: 20px;">
+              PROCESS_PARAMETER_SCANNER - This Photoshop Script allows the user to run of
+              a series of scans with changing parameters for the following PROCESSes:
+
+              <ul style="list-style-type:disc">
+                <li>Gaussian Blur - Radius &gt; P1(S1-SN)M1,</li>
+
+                <li>HighPass - Radius &gt; P1(S1-SN)M1,</li>
+
+                <li>Median - Radius &gt; P1(S1-SN)M1,</li>
+
+                <li>Unsharp Mask - Radius &gt; P1(S1-SN)M1, Percent &gt; P2(S1-SN)M2,
+                Threshold &gt; P3(S1-SN)M3,</li>
+
+                <li>Gamma/Exposure - Gamma &gt; P1(S1-SN)M1, Exposure &gt; P2(S1-SN)M2,
+                Offset &gt; P3(S1-SN)M3.</li>
+              </ul>where: P1, P2, P3, P4, and P5 are Parameters required by the PROCESS,
+              S1 and SN are the first and last users definition of the Parameters and M1,
+              M2, M3, M4, and M5 are modifiers telling the shape of the interpolation,
+              LINEAR or POWER, between S1 and SN for the scans. LINEAR interpolation is
+              the default. M = 0 or 1 is Linear and other positive values represent
+              powers. This document and the script do not know anything about the
+              Parameters so limited checking for validity is performed. Please review the
+              usage of the parameters in the PROCESS documentation.
+            </div>
+          </td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg" colspan="2">INPUT IMAGE</td>
+        </tr>
+
+        <tr align="left" valign="middle">
+          <td class="bg1" colspan="2">
+            <div style="padding: 15px;">
+              Input can be 8, 16, or 32 bits per color channel with the output being the
+              same. Color type (RGB) is not changed either.
+            </div>
+          </td>
+        </tr>
+
+        <tr align="center" valign="middle">
+          <td class="bg1" colspan="2">
+            <table align="center" cols="2" border="1" cellspacing="0" cellpadding="2">
+              <tbody>
+                <tr align="center" valign="middle">
+                  <td class="bg" colspan="6">USAGE PARAMETERS</td>
+                </tr>
+
+                <tr valign="middle">
+                  <td>ITEM</td>
+
+                  <td>FUNCTION</td>
+
+                  <td>User INPUT</td>
+
+                  <td>INPUT Size (px)</td>
+
+                  <td>OUTPUT Size(px)</td>
+
+                  <td>EXT.</td>
+                </tr>
+
+                <tr>
+                  <td colspan="6" bgcolor="0" height="0" cellpadding="0"></td>
+                </tr>
+
+                <tr>
+                  <td>&nbsp;&nbsp;Process Parameter Scanner&nbsp;&nbsp;</td>
+
+                  <td>Allows the user to run of a series of scans with changing
+                  parameters for various processes.</td>
+
+                  <td>PROCESS_PARAMETER_SCANNER.pdf</td>
+
+                  <td>Width by height.</td>
+
+                  <td>Width by height.</td>
+
+                  <td>jsxbin</td>
+                </tr>
+
+                <tr align="center" valign="middle">
+                  <td class="bg1" colspan="6"><img src="PPS-dialog.png" alt=
+                  "Dialog" /></td>
+                </tr>
+
+                <tr align="center" valign="middle">
+                  <td class="bg1" colspan="6">
+                    <table align="center" cols="4" border="0" cellspacing="0"
+                    cellpadding="0">
+                      <tr align="center" valign="middle">
+                        <td class="bg" colspan="4">Number of SCANS</td>
+                      </tr>
+
+                      <tr>
+                        <td class="bg1" colspan="4">The number of times N that the
+                        PROCESS is executed. Each execution uses a modified M
+                        interpolation of parameters between Scans 1 and N. Linear
+                        interpolation is the default.</td>
+                      </tr>
+
+                      <tr>
+                        <td class="bg" colspan="1" width="25%">PARAMETER-1</td>
+
+                        <td class="bg" colspan="1">SCAN 1</td>
+
+                        <td class="bg" colspan="1">SCAN N</td>
+
+                        <td class="bg" colspan="1">MODIFIER</td>
+                      </tr>
+
+                      <tr>
+                        <td class="bg1" colspan="1"></td>
+
+                        <td class="bg1" colspan="1">
+                          <ul style="list-style-type:disc">
+                            <li>Gaussian Blur - Radius,</li>
+
+                            <li>HighPass - Radius,</li>
+
+                            <li>Median - Radius,</li>
+
+                            <li>Unsharp Mask - Radius,</li>
+
+                            <li>Gamma/Exposure - Gamma.</li>
+                          </ul>
+                        </td>
+
+                        <td class="bg1" colspan="1">
+                          <ul style="list-style-type:disc">
+                            <li>Gaussian Blur - Radius,</li>
+
+                            <li>HighPass - Radius,</li>
+
+                            <li>Median - Radius,</li>
+
+                            <li>Unsharp Mask - Radius,</li>
+
+                            <li>Gamma/Exposure - Gamma.</li>
+                          </ul>
+                        </td>
+
+                        <td class="bg1" colspan="1">
+                          <ul style="list-style-type:disc">
+                            <li>Gaussian Blur - Radius,</li>
+
+                            <li>HighPass - Radius,</li>
+
+                            <li>Median - Radius,</li>
+
+                            <li>Unsharp Mask - Radius,</li>
+
+                            <li>Gamma/Exposure - Gamma.</li>
+                          </ul>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="bg" colspan="1">PARAMETER-2</td>
+
+                        <td class="bg" colspan="1">SCAN 1</td>
+
+                        <td class="bg" colspan="1">SCAN N</td>
+
+                        <td class="bg" colspan="1">MODIFIER</td>
+                      </tr>
+
+                      <tr>
+                        <td class="bg1" colspan="1"></td>
+
+                        <td class="bg1" colspan="1">
+                          <ul style="list-style-type:disc">
+                            <li>Unsharp Mask - Percent</li>
+
+                            <li>Gamma/Exposure - Exposure.</li>
+                          </ul>
+                        </td>
+
+                        <td class="bg1" colspan="1">
+                          <ul style="list-style-type:disc">
+                            <li>Unsharp Mask - Percent</li>
+
+                            <li>Gamma/Exposure - Exposure.</li>
+                          </ul>
+                        </td>
+
+                        <td class="bg1" colspan="1">
+                          <ul style="list-style-type:disc">
+                            <li>Unsharp Mask - Percent</li>
+
+                            <li>Gamma/Exposure - Exposure.</li>
+                          </ul>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="bg" colspan="1">PARAMETER-3</td>
+
+                        <td class="bg" colspan="1">SCAN 1</td>
+
+                        <td class="bg" colspan="1">SCAN N</td>
+
+                        <td class="bg" colspan="1">MODIFIER</td>
+                      </tr>
+
+                      <tr>
+                        <td class="bg1" colspan="1"></td>
+
+                        <td class="bg1" colspan="1">
+                          <ul style="list-style-type:disc">
+                            <li>Unsharp Mask - Threshold</li>
+
+                            <li>Gamma/Exposure - Offset.</li>
+                          </ul>
+                        </td>
+
+                        <td class="bg1" colspan="1">
+                          <ul style="list-style-type:disc">
+                            <li>Unsharp Mask - Threshold</li>
+
+                            <li>Gamma/Exposure - Offset.</li>
+                          </ul>
+                        </td>
+
+                        <td class="bg1" colspan="1">
+                          <ul style="list-style-type:disc">
+                            <li>Unsharp Mask - Threshold</li>
+
+                            <li>Gamma/Exposure - Offset.</li>
+                          </ul>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="bg" colspan="1">PARAMETER-4</td>
+
+                        <td class="bg" colspan="1">SCAN 1</td>
+
+                        <td class="bg" colspan="1">SCAN N</td>
+
+                        <td class="bg" colspan="1">MODIFIER</td>
+                      </tr>
+
+                      <tr>
+                        <td class="bg1" colspan="4"></td>
+                      </tr>
+
+                      <tr>
+                        <td></td>
+                      </tr>
+
+                      <tr>
+                        <td class="bg" colspan="1">PARAMETER-5</td>
+
+                        <td class="bg" colspan="1">SCAN 1</td>
+
+                        <td class="bg" colspan="1">SCAN N</td>
+
+                        <td class="bg" colspan="1">MODIFIER</td>
+                      </tr>
+
+                      <tr>
+                        <td class="bg1" colspan="4"></td>
+                      </tr>
+
+                      <tr>
+                        <td><br></td>
+                      </tr>
+
+                      <tr align="center" valign="middle">
+                        <td class="bg" colspan="7">PROCESS</td>
+                      </tr>
+
+                      <tr align="left" valign="middle">
+                        <td class="bg1" colspan="7">
+                          <div style="padding: 15px;">
+                            <ul>
+                              <li>Gaussian Blur,<br /></li>
+
+                              <li>HighPass,<br /></li>
+
+                              <li>Median,<br /></li>
+
+                              <li>Unsharp Mask,<br /></li>
+
+                              <li>Gamma/Exposure.</li>
+                            </ul><br />
+                            More PROCESSes may be added at a later time.<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;ACR - Saturation, Vibrance,
+                            Clarity,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;PS - Displace, Color Mixer, and
+                            Offset have been suggested.
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr align="center" valign="middle">
+                        <td class="bg" colspan="7">OK/CANCEL/HELP</td>
+                      </tr>
+
+                      <tr align="left" valign="middle">
+                        <td class="bg1" colspan="7">
+                          <div style="padding: 15px;">
+                            OK - Start script execution using parameters set in the above
+                            fields.<br />
+                            CANCEL - Cancel the use of the script before running and
+                            return to Photoshop. The ESC key cancels execution of the
+                            script while running in Photoshop.<br />
+                            HELP - Open the PDF help file.<br />
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr align="center" valign="middle">
+                  <td class="bg" colspan="7">RECOMMENDED SCRIPT USAGE</td>
+                </tr>
+
+                <tr align="center" valign="middle">
+                  <td class="bg1" colspan="7">
+                    <div style="padding: 15px;">
+                      Typical usage is GAUSSIAN BLUR with number of SCANs = 5, Radius at
+                      P1S1 = 0.5, and at P1SN = 5.0.
+                    </div>
+                  </td>
+                </tr>
+
+                <tr align="center" valign="middle">
+                  <td class="bg" colspan="7">OUTPUT IMAGES</td>
+                </tr>
+
+                <tr align="center" valign="top">
+                  <td class="bg1" colspan="2">
+                    <div style="padding: 10px;"><img src="PPS-layersPalette.png" alt=
+                    "ALL" class="c3" /></div>
+                  </td>
+
+                  <td class="bg1" colspan="5">
+                    <div style="padding: 10px;">
+                      The Layer name (PROCESS 00N_a.b/c/e.f/g/i.j) is the PROCESS name,
+                      followed by a leading zero filled counter from 1 to the number of
+                      scans, followed by and underscore "_", and then followed by
+                      the local values P1 (a.b), P2 (c), P3 (e.f), P4 (g), and P5 (i.j)
+                      separated by "/" which were used by the PROCESS.<br />
+
+                      Example: GAUSSIAN BLUR 3_2.75 for less than 10 scans(layers) and
+                      03_2.75 for 10 or more scans.
+                    </div>
+                  </td>
+                </tr>
+
+                <tr align="center" valign="middle">
+                  <td class="bg" colspan="7">SAVE TO FILE</td>
+                </tr>
+
+                <tr align="center" valign="middle">
+                  <td class="bg1" colspan="7">If saving to a file, it is highly
+                  recommended that the file format does not use lossy compression.<br />
+                  PSD/PSB or TIF formats are probably the best with PNG24 next.</td>
+                </tr>
+
+                <tr align="center" valign="middle">
+                  <td class="bg" colspan="7">INSTALLATION/REMOVAL</td>
+                </tr>
+
+                <tr align="center" valign="middle">
+                  <td class="bg1" colspan="7">This script should work on Photoshop
+                  versions CS6 and CC onwards and for both Windows and MAC.<br />
+                  Might also work with Photoshop Elements. Someone should try it.
+                  Please.<br />
+                  <br />
+                  The Script filename is PROCESS_PARAMETER_SCANNER.jsxbin and will be
+                  loaded to a folder with mostly *.jsx files.<br />
+                  The Help filename is PROCESS_PARAMETER_SCANNER-HELP.pdf and should be
+                  placed in the same folder as the Script file.</td>
+                </tr>
+
+                <tr align="center" valign="middle">
+                  <td class="bg1" colspan="7">MAC OS X foldername:  PSCC 2018:<br />
+                  Users/[username]/Library/Preferences/Adobe Photoshop CC 2018
+                  Settings<br /></td>
+                </tr>
+                <tr align="center" valign="middle">
+                  <td class="bg1" colspan="7">WINDOWS 10 foldername:  PSCC 2018:<br />
+                  C:\Program Files\Adobe\Adobe Photoshop CC
+                  2018\Presets\Script<br /></td>
+                </tr>
+
+                <tr align="center" valign="middle">
+                  <td class="bg" colspan="7">COPYRIGHT</td>
+                </tr>
+
+                <tr align="center" valign="middle">
+                  <td class="bg1" colspan="7">
+					<div style="padding: 25px;">
+                      RON CHAMBERS COPYRIGHT 2018
+                      <br />
+					  PROCESSING PARAMETER SCANNER LICENSE AND COPYRIGHT
+					  <br />
+					  Ron Chambers, rechmbrs@gmail.com<br />
+					  February 2018<br />
+					  Release of PROCESS_PARAMETER_SCANNER.jsxbin.  The jsxbin routines are JavaScripts scripts for Adobe Photoshop.  Compilation and rules for coding were set by Adobe ExtendedScript IDE.<br />
+					  <br />
+					  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.<br />
+					  <br />
+					  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.<br />
+					</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+﻿/* From:  https://feedback.photoshop.com/photoshop_family/topics/how-to-check-if-document-has-background-layer-with-jsx-javascript-script-in-photoshop?topic-reply-list%5Bsettings%5D%5Bfilter_by%5D=all&topic-reply-list%5Bsettings%5D%5Bpage%5D=1#reply_19573059*/
+var  hasBackgroundLayerAM = function () 
+{ 
+    var ref = new ActionReference(); 
+    ref.putProperty( charIDToTypeID("Prpr"), stringIDToTypeID( "hasBackgroundLayer" )); 
+    ref.putEnumerated(charIDToTypeID( "Dcmn" ),charIDToTypeID( "Ordn" ),charIDToTypeID( "Trgt" ));
+    var desc =  executeActionGet(ref); 
+    var res = desc.getBoolean(stringIDToTypeID( "hasBackgroundLayer" )); 
+    return res;   
+};

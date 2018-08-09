@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.alert {
+    padding: 4px;
+    background-color: #202020;
+    border: 2px solid #505050;
+    color: white;
+    font-weight: bold;
+    width: 400px;
+    font-family: Arial, san-serif;
+}
+
+.closebtn {
+    //margin-left: 15px;
+    //color: white;
+    //font-weight: bold;
+    float: right;
+    font-size: 22px;
+    //line-height: 20px;
+    //cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+</style>
+</head>
+<body>
+
+<h2>Alert Messages</h2>
+
+<p>Click on the "x" symbol to close the alert message.</p>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Danger!</strong> 	<br>
+  Script Alert<br>
+	---------------------------<br>
+	Separator: Yes<br>
+	Sampling: PERIODIC Diagonal<br>
+	Gather Type: X - Columns
+</div>
+
+</body>
+</html>
