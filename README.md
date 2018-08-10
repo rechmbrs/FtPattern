@@ -1,9 +1,8 @@
 # Pattern Suppressor
-Fourier Transformation plugins and actions for Adobe Photoshop.
-
-_By Jonas M. Rogne (Chain), Ronald Chambers (Ronc) and Francesco Pierfederici._
-
-
+Fourier Transformation plugins
+_By Ronald Chambers (RONC) and Francesco Pierfederici._
+and actions for Adobe Photoshop.
+_By Jonas M. Rogne (Chain) and Ronald Chambers (RONC)._ 
 ## What is this? 
 This is a set of plugins and actions for Adobe Photoshop that will let you easily remove regular repeating patterns from images that cannot conveniently be removed by traditional means.
 
