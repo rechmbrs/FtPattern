@@ -93,3 +93,17 @@ For macOS, extract the Adobe Photoshop® SDK wherever you like, navigate to ```p
 ## License
 
 Please see the [LICENSE](LICENSE) text file included in this repository for copyright and license information.
+
+## Plugin usage other than Pattern Suppression
+This version of the Fourier transform plugins includes:
+  8, 16, and 32 bit/color channel
+  RGB individual channels (not desaturated)
+  1D, 2D, and 3D Half and Full spectrum transforms. 
+
+They all are open-source and use the FFTw software for the transforms.  The individual transforms should be applied only using the Ft  Fourier Transform Suite script rather than from the Filter menu as a standard RGB file cannot hold the amount of data generated.   Windows and Mac with Photoshop CS6 through CC present (2018).
+
+These are being loaded to   GitHub - rechmbrs/FtPattern: Ft Fourier transforms C++ code for Photoshop WinMac and Pattern Suppression Action    but it is not complete yet.  
+
+Presently working on documentation and history.  
+
+Need persons to read docs and ask questions to fill in helping and missing documentation.  Help will be accepted if you have time.
