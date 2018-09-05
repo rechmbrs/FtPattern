@@ -1,0 +1,82 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+//								PIPL
+//
+//  Здесь находится описание специфических "фотошопских" ресурсов, наличие которых
+//	необходимо для правильной идентификации фильтра. 
+//	Нас тут должны интересовать две строчки с названиями категории и собственно фильтра.
+
+
+16000  PiPL  DISCARDABLE
+BEGIN
+	1, /* First byte must always be 1 */
+	0L, /* kCurrentPiPL Version */
+	8L, /* количество записей*/
+//////// 1
+	"MIB8", /* '8BIM' */
+	"dnik", /* 'kind' PIKindProperty */
+	0L, /* Index */  
+	4L, /* Length */ 
+	"MFB8", /* '8BFM' Photoshop Filter plug-in */
+///////// 2
+	"MIB8", /* '8BIM' */
+	"eman", /* 'name' PINameProperty */
+	0L, /* Index */
+	8L, /* Length */
+	"\x04IFFT  \0",										// НАЗВАНИЕ ФИЛЬТРА
+					   // 8L это длина строки в десятичной системе выравненная четверками, то есть
+					   // нужно выбирать из ряда 4L, 8L, 12L, 16L и т.д.
+					   // в кавычках непосредственно название, начинающееся с указателя длины строки 
+					   // в шестнадцатеричной системе. \x05 значит что выводиться на экран будут пять
+					   // символов ("Proba"). Два замыкающих ноля необходимы для дополнения до 8.
+					   // Примеры:
+					   //	8L, "\x06 Proba\0"
+					   //	8L, "\x07Proba33"
+					   //	12L,"\x08Proba333\0\0\0"
+
+////////  3
+	"MIB8", /* '8BIM' */
+	"gtac", /* 'catg' PICategoryProperty */
+	0L, /* Index */
+	16L, /* Length */
+	"\x0DAlex Chirokov\0\0",										// КАТЕГОРИЯ
+//////// 4
+	"MIB8", /* '8BIM' */
+	"srev", /* 'vers' PIVersionProperty */
+	0L, /* Index */
+	4L, /* Length */
+	0X00010001L, /* (Major << 16) | Minor */
+///////  5
+	"MIB8", /* '8BIM' */
+	"68xw", /* 'wx86' PIWin32X86CodeProperty */
+	0L, /* Index */
+	12L, /* Length */
+	"ENTRYPOINT\0\0", 
+///////  6
+	"MIB8", /* '8BIM' */
+	"edom", /* 'mode' SupportedModes */
+	0L, /* Index */
+	4L, /* Length */
+	"\x5F", /* Mode 1 flags */
+	"\xC0", /* Mode 2 flags */
+	0, /* Reserved */
+//////   7
+	"MIB8", /* '8BIM' */
+	"lbne", /* 'enbl' EnableInfoProperty */
+	0L, /* Index */
+	32L, /* Length */
+	"in (PSHOP_ImageMode,RGBMode)\0\0\0\0", 				// используем только RGB mode
+//////  8
+	"MIB8", /* '8BIM' */
+	"icif", /* 'fici' PIFilterCaseInfoProperty */
+	0L, /* Index */
+	28L, /* Length */
+	"\x01\x01\x07\x00",	// 1 This is a background layer or a flat image.There is no transparency data or selec-tion.
+	"\x01\x01\x0F\x00",	// 2 No transparency data, but a selection may be present. The selection will be pre-sentedas mask data.
+	"\x01\x01\x0F\x00",	// 3 Image data with an accompanying mask.
+	"\x01\x01\x07\x00",	// 4 Layer with transparency editing enabled and no selection.
+	"\x01\x01\x0F\x00",	// 5 Layer with transparency editing enabled and a selection.
+	"\x01\x01\x07\x00",	// 6 Layer with transparency editing disabled and no selection.
+	"\x01\x01\x0F\x00",	// 7 Layer with transparency editing disabled and a selection.
+
+END

@@ -1,0 +1,22 @@
+﻿  Performing Custom Build Tools
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  FFT_RGB.r
+  FFT_RGB.cpp
+FFT_RGB.cpp(108): warning C4312: 'type cast': conversion from 'int32' to 'PlatformData *' of greater size
+FFT_RGB.cpp(181): warning C4244: '=': conversion from 'double' to 'unsigned short', possible loss of data
+  myColor.cpp
+  Creating x64\Release\FFT_RGB.res
+  
+  Using codepage 1252 as default
+  
+  FFT_RGB.rc.
+  Writing DIALOG:PROBA,	lang:0x409,	size 186.
+  Writing PIPL:16000,	lang:0x409,	size 366
+     Creating library C:\Users\Ronald\Desktop\FFT-VS2015\Fourier Transformation\Source\FFT_RGB\x64\Release\FFT_RGB.lib and object C:\Users\Ronald\Desktop\FFT-VS2015\Fourier Transformation\Source\FFT_RGB\x64\Release\FFT_RGB.exp
+  Generating code
+  Finished generating code
+  All 8 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  FFT_RGB.vcxproj -> C:\Users\Ronald\Desktop\FFT-VS2015\Fourier Transformation\Source\FFT_RGB\x64\Release\FFT_RGB.8bf
+  FFT_RGB.vcxproj -> C:\Users\Ronald\Desktop\FFT-VS2015\Fourier Transformation\Source\FFT_RGB\x64\Release\FFT_RGB.pdb (Full PDB)

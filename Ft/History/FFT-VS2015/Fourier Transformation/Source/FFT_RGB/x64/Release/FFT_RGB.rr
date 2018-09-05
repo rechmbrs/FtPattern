@@ -1,0 +1,89 @@
+
+
+
+
+
+resource 'PiPL' (16000, "FFT1 RGB" " PiPL", purgeable)
+{
+	{
+		Kind { Filter },
+		Name { "FFT1 RGB" "..." },
+		Category { "Fourier Transform RC" },
+		Version { (4 << 16) | 1 },
+
+		
+
+
+
+
+
+
+
+		    
+				CodeWin64X86 { "ENTRYPOINT" },
+			
+
+
+		
+		SupportedModes
+		{
+			noBitmap, noSupportGrayScale,
+			noIndexedColor, doesSupportRGBColor,
+			noSupportCMYKColor, noSupportHSLColor,
+			noSupportHSBColor, doesSupportMultichannel,
+			noSupportDuotone, noSupportLABColor
+		},
+			
+		EnableInfo { "in(PSHOP_ImageMode, RGBMode, RGB48Mode) && " 
+			"PSHOP_ImageDepth == 8 || PSHOP_ImageDepth == 16 || PSHOP_ImageDepth == 32" },
+
+		PlugInMaxSize { 2000000, 2000000 },
+    
+		FilterCaseInfo
+		{
+			{
+				
+				inWhiteMat, outWhiteMat,
+				doNotWriteOutsideSelection,
+				filtersLayerMasks, worksWithBlankData,
+				doNotCopySourceToDestination,
+					
+				
+				inWhiteMat, outWhiteMat,
+				writeOutsideSelection,
+				filtersLayerMasks, worksWithBlankData,
+				doNotCopySourceToDestination,
+				
+				
+				inWhiteMat, outWhiteMat,
+				writeOutsideSelection,
+				filtersLayerMasks, worksWithBlankData,
+				doNotCopySourceToDestination,
+					
+				
+				inWhiteMat, outWhiteMat,
+				doNotWriteOutsideSelection,
+				filtersLayerMasks, worksWithBlankData,
+				doNotCopySourceToDestination,
+					
+				
+				inWhiteMat, outWhiteMat,
+				writeOutsideSelection,
+				filtersLayerMasks, worksWithBlankData,
+				doNotCopySourceToDestination,
+					
+				
+				inWhiteMat, outWhiteMat,
+				doNotWriteOutsideSelection,
+				filtersLayerMasks, worksWithBlankData,
+				doNotCopySourceToDestination,
+					
+				
+				inWhiteMat, outWhiteMat,
+				writeOutsideSelection,
+				filtersLayerMasks, worksWithBlankData,
+				doNotCopySourceToDestination
+			}
+		}	                                     
+	}
+};

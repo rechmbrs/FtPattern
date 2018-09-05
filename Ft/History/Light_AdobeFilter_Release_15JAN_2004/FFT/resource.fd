@@ -1,0 +1,5 @@
+!MS$FREEFORM
+! Microsoft Developer Studio generated include file.
+! Used by proba.rc
+!
+      integer, parameter :: IDC_STATIC                      = 65535

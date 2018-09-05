@@ -1,0 +1,31 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: proba - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"proba.res" /d "NDEBUG" "D:\Projects\Programs\General\Adobe Filter\FFT\proba.rc"" 
+Creating temporary file "C:\DOCUME~1\chirokov\LOCALS~1\Temp\RSPC70.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib FFTW2st.lib /nologo /entry:"DLLEntry" /subsystem:windows /dll /incremental:no /pdb:"Temp/FFT.pdb" /machine:IX86 /def:".\proba.def" /out:"FFT.8bf" /implib:"Temp/FFT.lib" 
+".\Temp\myColor.obj"
+".\Temp\proba.obj"
+".\proba.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\chirokov\LOCALS~1\Temp\RSPC70.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+   Creating library Temp/FFT.lib and object Temp/FFT.exp
+FFT.exp : warning LNK4070: /OUT:proba.8bf directive in .EXP differs from output filename "FFT.8bf"; ignoring directive
+LINK : warning LNK4089: all references to "USER32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+FFT.8bf - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>
