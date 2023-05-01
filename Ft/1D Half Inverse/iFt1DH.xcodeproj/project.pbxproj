@@ -374,6 +374,7 @@
 		4FADC23408B4156C00ABE55E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
@@ -383,15 +384,27 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				HEADER_SEARCH_PATHS = (
+					../../../../common/includes,
+					../../../../../photoshopapi/photoshop,
+					../Ft_lib,
+				);
 				INFOPLIST_FILE = ../../../../common/resources/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				LIBRARY_SEARCH_PATHS = ../Ft_Lib;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				LIBRARY_SEARCH_PATHS = (
+					../Ft_Lib,
+					/usr/local/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				PLUGIN_TYPE = 8BFM;
 				PRODUCT_BUNDLE_IDENTIFIER = org.fpierfed.Ft3DF;
 				PRODUCT_NAME = iFt1DH;
+				REZ_SEARCH_PATHS = (
+					../../../../../photoshopapi/resources,
+					../../../../common/resources,
+				);
 				SDKROOT = macosx;
-				VALID_ARCHS = x86_64;
+				VALID_ARCHS = arm64;
 				WRAPPER_EXTENSION = plugin;
 				ZERO_LINK = NO;
 			};
@@ -430,7 +443,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_PKGINFO_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				OBJROOT = "$(SYMROOT)../../Objs";
 				ONLY_ACTIVE_ARCH = YES;
 				REZ_PREFIX_FILE = "$(SRCROOT)/../../../../common/includes/MachOMacrezXcode.h";
