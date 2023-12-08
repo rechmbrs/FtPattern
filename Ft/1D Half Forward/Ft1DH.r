@@ -58,6 +58,7 @@ resource 'PiPL' (ResourceID, plugInName " PiPL", purgeable)
         Component { ComponentNumber, plugInName },
         
         #ifdef __PIMac__
+        CodeMacARM64 { "PluginMain" },
         CodeMacIntel64 { "PluginMain" },
         #else
         #if defined(_WIN64)
